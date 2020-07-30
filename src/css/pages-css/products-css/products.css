@@ -1,0 +1,17 @@
+.products-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+/** desktop view **/
+
+@media only screen and (min-width: 720px) {
+  .products-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

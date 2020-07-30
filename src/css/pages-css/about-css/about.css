@@ -1,0 +1,24 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 75px 0;
+}
+
+.about-us-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.about-us-desc {
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.img2 {
+  background-image: url("https://cdn.shopify.com/s/files/1/0447/2517/files/Artboard_3_6aa01198-8346-49f1-b6df-438030936e72_1728x.png?v=1555360771%201728w%20827h");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+}

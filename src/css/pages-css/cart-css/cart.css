@@ -1,0 +1,161 @@
+.cart-container {
+  padding: 50px 0;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.top-cart hr {
+  margin: 30px 0;
+  width: 100%;
+}
+
+.your-cart {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.cart-info {
+  width: 80%;
+}
+
+.item-container hr {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.item-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.item-price {
+  font-size: 1rem;
+  color: rgb(49, 179, 55);
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.remove-btn i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.no-items {
+  height: 40vh;
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.price-container {
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.total-tax {
+  margin: 20px 0;
+}
+
+.total-price {
+  font-weight: 600;
+}
+
+.cart-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.checkout-btn,
+.coupon-btn {
+  height: 45px;
+  width: 100%;
+  line-height: 45px;
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.checkout-btn {
+  background-color: rgb(0, 0, 0);
+}
+
+.checkout-btn i {
+  margin-left: 10px;
+}
+
+.coupon-btn {
+  background-color: rgb(42, 116, 255);
+  margin: 0 0 20px 0;
+}
+
+/** desktop view **/
+
+@media only screen and (min-width: 720px) {
+  .price-container {
+    margin: 20px 0;
+    font-size: 1.3rem;
+  }
+
+  .cart-buttons {
+    flex-direction: row;
+  }
+
+  .checkout-btn {
+    margin-left: 80px;
+  }
+
+  .coupon-btn {
+    margin-right: 80px;
+    margin-bottom: 0;
+  }
+
+  .item-name {
+    font-size: 1.4rem;
+    margin: 0 30px;
+  }
+
+  .item-price {
+    font-size: 1.4rem;
+  }
+
+  .remove-btn i {
+    font-size: 1.6rem;
+  }
+}

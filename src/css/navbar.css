@@ -1,0 +1,139 @@
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 1020;
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2);
+}
+
+.line-closed {
+  display: block;
+  width: 37px;
+  height: 3px;
+  margin: 3px 0;
+  background-color: black;
+}
+
+.logo {
+  height: 65px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.product-links {
+  display: none;
+}
+
+.cart {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-amount {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 0 5px;
+  line-height: 18px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: white;
+  background-color: rgb(218, 42, 50);
+}
+
+.cart-icon {
+  font-size: 1.8rem;
+}
+
+/** menu links **/
+.hamburger {
+  z-index: 1001;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-links {
+  padding-top: 20px;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  transform: translate(-50%, -100%);
+  transition: all 0.75s ease-in-out;
+  top: 0;
+  left: 50%;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: white;
+  z-index: 1000;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.menu-links-open {
+  transition: all 0.5s ease-in-out;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  position: fixed;
+}
+
+/** hamburger menu **/
+
+.line-1 {
+  transform: rotate(0deg);
+  transition: all 0.4s ease-in-out;
+}
+
+.line-1-open {
+  position: absolute;
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.line-2 {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.line-2-open {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.line-3 {
+  transform: rotate(0deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.line-3-open {
+  position: absolute;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-in-out;
+}
+
+/** desktop view **/
+
+@media only screen and (min-width: 720px) {
+  .menu-links {
+    font-size: 1.5rem;
+  }
+}
