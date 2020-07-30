@@ -38,6 +38,7 @@
 #email-input {
   padding: 12px 0 12px 20px;
   border: none;
+  border-radius: 0px;
   box-sizing: border-box;
   font-size: 1.1rem;
   font-family: "Titillium Web", sans-serif;
@@ -59,6 +60,7 @@
   color: white;
   font-family: "Titillium Web", sans-serif;
   -webkit-appearance: none;
+  border-radius: 0px;
 }
 
 /** desktop view **/
